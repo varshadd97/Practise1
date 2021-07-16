@@ -1,0 +1,75 @@
+let edit = 0;
+
+CRUD
+
+ADD => 
+
+title => Input
+description => Input
+Submit => Onclick () {
+    if(edit !== 0) {
+        addItem :
+    }else{
+        
+    }
+}
+
+let additm = {
+    title : titleinput,
+    description: descpinput,
+    id : list.length() + 1,
+}
+
+list 
+let arr = list;
+arr.push(additm);
+list = arr;
+
+
+LIST => []
+
+list.map((item) => {
+    <>
+        `<p>${item.title}</p>`
+        <input onChange={} value=""></input>
+        <button text="edit"  onClick={(e) => {
+            edit = item.id;
+            let arr = list;
+            let index = arr.findIndex(_item => {
+                return _item.id === item.id;
+            })
+            arr[index] = {
+                ...arr[index],
+                title : titleinput,
+                description : descriptionInpot
+            }
+        }} />
+    </>
+})
+
+DELETE id
+
+
+
+
+EDIT id
+
+
+let ar = {
+    id: '3',
+    title : 'hello'
+}
+
+
+{
+...ar,
+title : 'customizr'
+}
+
+{
+    id: '3',
+    title : 'customizr'
+
+}
+
+

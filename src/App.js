@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Sonam from "./Component/Sonam";
+import Rahul from "./Component/Rahul";
+import CRUD from "./Component/CRUD"
+import SingleValueCounter from "./Component/SingleValueCounter.";
+import FunctionalCounter from "./Component/FunctionalCounter";
+import ClassCounter from "./Component/ClassCounter";
+import ArrayMethods from "./Component/ArrayMethods";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Sonam />
+      <Rahul />
+      <ArrayMethods />
+      <CRUD />
+      <FunctionalCounter />
+      <ClassCounter />
+      <SingleValueCounter />
     </div>
   );
-}
+};
 
 export default App;
